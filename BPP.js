@@ -227,25 +227,19 @@ var ABI = [
 	{
 		"inputs": [
 			{
-				"internalType": "bool",
-				"name": "_state",
-				"type": "bool"
-			}
-		],
-		"name": "setPaused",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
 				"internalType": "string",
 				"name": "_uriPrefix",
 				"type": "string"
 			}
 		],
 		"name": "setUriPrefix",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "togglePause",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -338,7 +332,13 @@ var ABI = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_sender",
+				"type": "address"
+			}
+		],
 		"name": "checkEarlyMintMatrix",
 		"outputs": [
 			{
@@ -352,6 +352,11 @@ var ABI = [
 	},
 	{
 		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_sender",
+				"type": "address"
+			},
 			{
 				"internalType": "uint256",
 				"name": "_mintAmount",
