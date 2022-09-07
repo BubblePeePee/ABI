@@ -594,6 +594,19 @@ var ABI = [
 	{
 		"inputs": [
 			{
+				"internalType": "bytes32",
+				"name": "_merkleRoot",
+				"type": "bytes32"
+			}
+		],
+		"name": "setMerkleRoot",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "string",
 				"name": "_uriPrefix",
 				"type": "string"
