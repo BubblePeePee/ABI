@@ -156,6 +156,19 @@ var ABI = [
 	},
 	{
 		"inputs": [],
+		"name": "contractURI",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "cost",
 		"outputs": [
 			{
@@ -608,6 +621,19 @@ var ABI = [
 		"inputs": [
 			{
 				"internalType": "string",
+				"name": "_uriContractMetadata",
+				"type": "string"
+			}
+		],
+		"name": "setUriContractMetadata",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
 				"name": "_uriPrefix",
 				"type": "string"
 			}
@@ -741,6 +767,19 @@ var ABI = [
 		"name": "transferOwnership",
 		"outputs": [],
 		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "uriContractMetadata",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
